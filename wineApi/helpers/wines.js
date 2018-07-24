@@ -38,7 +38,7 @@ exports.updateWine = (req, res) => {
 	var wineId = req.params.wineid;
 	Wine.findOneAndUpdate({_id: wineId}, req.body, {new: true})
 	.then( (wine) => {
-		return res.json({message: "Updated wine!", wine});
+		return res.json(wine);
 	})
 	.catch( (err) => {
 		res.send(err);

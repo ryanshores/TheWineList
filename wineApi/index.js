@@ -2,7 +2,7 @@ let express = require("express");
 let app = express();
 let morgan = require('morgan');
 let createError = require("http-errors");
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3001;
 let bodyParser = require("body-parser");
 let config = require("config");
 
